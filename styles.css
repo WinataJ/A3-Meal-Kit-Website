@@ -1,0 +1,1298 @@
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F4ECDF;
+    color: #032F40;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation menu style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a, .nav-right a {
+    color: #032F40;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav-left .brand, .brand {
+    font-weight: bolder;
+}
+
+.get-started {
+    background-color: #F27405;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.get-started:hover {
+    background-color: #e06300;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+}
+
+.hamburger-menu span {
+    background: #032F40;
+    border-radius: 2px;
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    width: 25px;
+}
+
+@media (max-width: 800px) {
+    .nav-left, .nav-right {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+
+/* Hero section */
+.hero {
+    background-image: url('IMG/Main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text {
+    text-align: center;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Meet the Chef section */
+.meet-the-chef {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.meet-the-chef h2 {
+    font-size: 2.5em;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: #F29F05;
+    margin: 0 auto 20px;
+}
+
+.meet-the-chef img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.meet-the-chef p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.1em;
+    padding: 0 10px;
+}
+
+/* Quote section */
+.quote-section {
+    position: relative;
+    text-align: center;
+    color: #032F40;
+}
+
+.quote-section img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.quote-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    background: none;
+}
+
+.quote-text p {
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.quote-text .author {
+    display: block;
+    margin-top: 10px;
+}
+
+/* The "locally sourced" stuff section */
+.locally-sourced {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.locally-sourced h2 {
+    margin-bottom: 20px;
+}
+
+.image-scroll {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+
+.image-track {
+    display: flex;
+    width: calc(500px * 10);
+    animation: scroll 30s linear infinite;
+}
+
+.image-scroll img {
+    flex: 0 0 auto;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.locally-sourced p {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.1em;
+    padding: 0 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* How it works section */
+.how-it-works {
+    background-image: url('IMG/Main2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #032F40;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.how-it-works-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 80px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.how-it-works h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.how-it-works ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+    line-height: 3;
+    text-align: left;
+}
+
+.how-it-works ul li {
+    margin-bottom: 20px;
+}
+
+.how-it-works p {
+    font-size: 1.5em;
+    text-align: left;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+/* Contact us section */
+.contact-us {
+    background-color: #F4ECDF;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-us form input, .contact-us form textarea {
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-us form button {
+    background-color: #F27405;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.contact-us form button:hover {
+    background-color: #e06300;
+}
+
+/* Footer */
+footer {
+    background-color: #032F40;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+footer .social-media a img {
+    width: 30px;
+    height: 30px;
+}
+
+footer .footer-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Plan Selection */
+.choose-plan {
+    background-color: #F4ECDF;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.plan-selection {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.plan-selection h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.plan-selection p {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.plan-options {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plan-options label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.plan-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.plan-buttons button {
+    background-color: #fff;
+    border: 2px solid #F27405;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #F27405;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.plan-buttons button:hover {
+    background-color: #F27405;
+    color: #fff;
+}
+
+.plan-summary {
+    text-align: center; 
+    font-weight: bold;
+    border: 2px solid #F27405;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.price-info, .delivery-info {
+    padding: 10px;
+    border-bottom: 2px solid #F27405;
+}
+
+.shipping-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 10px;
+}
+
+.plan-summary {
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #F27405;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+.next-button {
+    background-color: #F27405;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    display: block; 
+    width: fit-content;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+.next-button:hover {
+    background-color: #e06300;
+}
+
+/* Special offers! section */
+.special-offer {
+    background-color: #032F40;
+    color: #F29F05;
+    text-align: center;
+    padding: 60px 40px;
+    margin-top: 40px;
+}
+
+.special-offer p:first-child {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.special-offer p:last-child {
+    font-size: 1em;
+}
+
+.offer-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.offer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #F27405;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    margin: 0 10px;
+    margin-top: 50px;
+    color: #F29F05;
+}
+
+.offer-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #F29F05;
+}
+
+.offer-discount {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #F29F05;
+}
+
+/* Why go with Kylie section*/
+.why-go-with-kylie {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+}
+
+.why-go-with-kylie h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+.why-go-with-kylie hr {
+    width: 60px;
+    border: 2px solid #F29F05;
+    margin: 10px auto;
+}
+
+.why-go-with-kylie img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.why-go-with-kylie p {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 40px auto;
+    max-width: 500px;
+    font-size: 22px;
+    font-style: italic;
+}
+
+/* The progression bar thingy */
+.progress-bar-container {
+    position: relative;
+    padding: 10px 0;
+    margin-bottom: 0px;
+}
+
+.progress-bar-background {
+    background-color: #FAFAFA; 
+    height: 80px; 
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 80px; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    min-width: 100px; 
+    flex-shrink: 0; 
+}
+
+.step-number {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #032F40;
+}
+
+.step-title {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #032F40;
+}
+
+.completed .step-number {
+    border-color: #F27405;
+    background-color: #F27405;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .progress-bar {
+        justify-content: flex-start; 
+    }
+}
+
+/* Contact Details section */
+.contact-details {
+    background-color: #F4ECDF;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    width: 80%;
+    max-width: 300px;
+    background-color: #F27405;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.contact-form button:hover {
+    background-color: #e06300;
+}
+
+/* 'Why Choose Us' section */
+.selling-point {
+    background-color: #FFFFFF;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.selling-point .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.selling-point h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    color: #032F40;
+}
+
+.selling-point p {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 20px;
+    color: #032F40;
+}
+
+/* banner Section */
+.lower-banner {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lower-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Recipe Banner section */
+.recipe-banner-container {
+    background-color: #ffffff; 
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    text-align: center; 
+}
+
+.recipe-banner h2 {
+    margin-bottom: 10px;
+}
+
+.recipe-banner p {
+    margin-bottom: 10px;
+}
+
+.recipe-banner .change-plan {
+    display: inline-block;
+    margin-top: 10px;
+    color: #FF6F3D; 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Recipe Cards */
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.recipe-card {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(60% - 10px);
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-info {
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.recipe-info .recipe-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recipe-info .time {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+.recipe-info .tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    background-color: #e0f7fa;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+
+.customise {
+    color: #F27405;
+    text-decoration: none;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.customise:hover {
+    color: #e06300;
+}
+
+.add-to-selection {
+    background-color: #F27405;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-self: flex-end;
+}
+
+.add-to-selection:hover {
+    background-color: #e06300;
+}
+
+/* Sticky menu */
+.sticky-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFF; 
+    color: #023E58;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+.sticky-menu .subtotal {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #023E58;
+}
+
+.sticky-menu .update-selection {
+    background-color: #FF6F3D;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.sticky-menu .update-selection:hover {
+    background-color: #FF5A1E;
+}
+
+/* Checkout Page */
+.checkout-container {
+    background-color: #FFFFFF; 
+    border: 1px solid #E0E0E0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto; 
+}
+
+.checkout-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.checkout-container h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.checkout-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #F29F05; 
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #FF6F3D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #FF5A1E;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: 200px; 
+}
+
+/* Order Confirmation Stuff */
+.order-confirmation {
+    background-color: #F4ECDF;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.confirmation-message {
+    background-color: #FFFFFF;
+    padding: 40px 80px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmation-message h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.confirmation-message p {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 20px;
+    color: #032F40;
+}
+
+.confirmation-message .back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F27405;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.confirmation-message .back-home:hover {
+    background-color: #e06300;
+}
+
+.confirmation-message img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Recipe details section */
+
+.recipe-details-container {
+    background-color: #F4ECDF;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.recipe-details-content {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+.back-to-recipes {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F27405;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-to-recipes:hover {
+    background-color: #e06300;
+}
+
+.recipe-details-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.recipe-details-content p,
+.recipe-details-content ul,
+.recipe-details-content ol {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 20px;
+    color: #032F40;
+}
+
+.recipe-details-content ul,
+.recipe-details-content ol {
+    padding-left: 20px;
+}
+
+.recipe-details-content li {
+    margin-bottom: 10px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dtags {
+    display: flex;
+    gap: 10px;
+}
+
+.dtag {
+    background-color: #e0f7fa;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.cooking-time {
+    font-size: 0.9em;
+    margin-left: 20px;
+}
+
+.description {
+    font-size: 1em;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.recipe-box {
+    border: 2px solid #F27405;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.recipe-box p {
+    margin-top: 0;
+}
+
+.recipe-box ul,
+.recipe-box ol {
+    padding-left: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 800x) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-left, .nav-right {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .nav-left a, .nav-right a {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .quote-section img {
+        height: 300px;
+    }
+
+    .quote-text p {
+        font-size: 1em;
+    }
+
+    .image-slider img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .how-it-works-content {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    .how-it-works h2 {
+        font-size: 2em;
+    }
+
+    .how-it-works ul {
+        font-size: 1.2em;
+    }
+
+    .how-it-works p {
+        font-size: 1.2em;
+    }
+
+    .contact-us h2 {
+        font-size: 2em;
+    }
+
+    .contact-us p {
+        font-size: 1em;
+    }
+
+    .progress-bar {
+        justify-content: flex-start;
+    }
+
+    .plan-selection {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .special-offer p:first-child {
+        font-size: 1.2em;
+    }
+
+    .special-offer p:last-child {
+        font-size: 0.9em;
+    }
+
+    .offer-details {
+        flex-direction: column;
+    }
+
+    .offer-box {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .sticky-menu .subtotal {
+        margin-left: 10px;
+    }
+    
+    .sticky-menu .update-selection {
+        margin-right: 10px;
+    }
+
+    .checkout-container h3 {
+        text-align: center; 
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .progress-bar {
+        justify-content: flex-start; 
+    }
+
+    .plan-selection {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .special-offer p:first-child {
+        font-size: 1em;
+    }
+
+    .special-offer p:last-child {
+        font-size: 0.8em;
+    }
+
+    .offer-box {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .sticky-menu {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .sticky-menu .subtotal {
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    
+    .sticky-menu .update-selection {
+        margin-right: 0;
+        font-size: 14px;
+        padding: 10px 30px; 
+    }
+
+    .checkout-container h3 {
+        text-align: center; 
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}
+
